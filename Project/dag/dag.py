@@ -147,10 +147,11 @@ with DAG(
 
             ScrapSpec >> TransSpec
 
-    create_database_task = BashOperator(
-    task_id='create_database',
-    bash_command=f"mysql -u your_username -p your_password < {'create_database.sql'}",
-    dag=dag,
+    create_database_task = PythonOperator(
+            task_id='load_group',
+            python_callable=my_python_function,
+            op_kwargs={'file_name': 'create_database.py'},
+            dag=dag,
     )
     with TaskGroup(group_id='Load_menus_into_database') as Load_menus_into_database:
 
