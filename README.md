@@ -6,7 +6,7 @@ This project aims to develop a user-friendly and efficient Price Tracker applica
 
 ## Technologies Used
 
-- **Webscraper: Selenium**: Selenium is a popular automation tool used for browsing websites and collecting data. We use this tool to gather product data from different store websites.
+- **Webscraper: Selenium**: Selenium is a popular automation tool used for browsing websites and collecting data. We use this tool to gather product data from Arfigyelo website.
 - **Transformation: Pandas**: Pandas is a Python library used for data manipulation and analysis. We use this tool to format and transform the collected data to make it easily processable and comprehensible.
 - **Data Orchestrator: Airflow**: Apache Airflow is a platform used for automating and scheduling workflows. We use this tool to schedule and coordinate the data collection, transformation, and analysis processes.
 - **Database: MySQL**: MySQL is an open-source relational database management system used for storing and managing data. This ensures reliable data storage and fast querying.
